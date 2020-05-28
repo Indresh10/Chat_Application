@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "689006332766",
+    "firebase_url": "https://mywhatsapp-e8177.firebaseio.com",
+    "project_id": "mywhatsapp-e8177",
+    "storage_bucket": "mywhatsapp-e8177.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:689006332766:android:341e73181655ffd47b9dcf",
+        "android_client_info": {
+          "package_name": "com.indresh.mywhatsapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "689006332766-fb872p52ktna7j0jedfgsv63vesc0euv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVDwINdpeT8mHf67uoylhF5X1O4exSFeA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "689006332766-fb872p52ktna7j0jedfgsv63vesc0euv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

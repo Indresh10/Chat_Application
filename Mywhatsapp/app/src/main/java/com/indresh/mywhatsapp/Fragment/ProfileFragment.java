@@ -36,6 +36,7 @@ import com.indresh.mywhatsapp.Model.User;
 import com.indresh.mywhatsapp.R;
 
 import java.util.HashMap;
+import java.util.Objects;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
@@ -77,7 +78,7 @@ public class ProfileFragment extends Fragment {
                     image_profile.setImageResource(R.mipmap.ic_launcher);
                 }
                 else {
-                    Glide.with(getContext()).load(user.getImageURL()).into(image_profile);
+                    Glide.with(Objects.requireNonNull(getContext())).load(user.getImageURL()).into(image_profile);
                 }
             }
 
@@ -154,7 +155,7 @@ public class ProfileFragment extends Fragment {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode==IMAGE_REQUEST && resultCode==RESULT_OK && data != null && data.getData()!=null){
             imageUri=data.getData();
-            if(uploadTask!=null&uploadTask.isInProgress()){
+            if(uploadTask!=null && uploadTask.isInProgress()){
                 Toast.makeText(getContext(), "Upload Is in Progress", Toast.LENGTH_LONG).show();
             }
             else {
